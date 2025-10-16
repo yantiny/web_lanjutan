@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
 import Link from "next/link"; // Tambahkan import Link
+import Navbar from "./Navbar";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
           </p>
           <Link href="/register">
             <button className="bg-[#699EEE] text-white px-12 py-1.5 rounded-md hover:bg-[#0046CC] transition">
-              Register
+              Get Started
             </button>
           </Link>
         </div>

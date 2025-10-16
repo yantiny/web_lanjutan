@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center py-6 px-10">
+    <nav className="flex items-center justify-between px-10 py-4 bg-white shadow">
       {/* Logo */}
       <div className="flex items-center space-x-2">
         <img src="/logo.svg" alt="Positivus Logo" className="w-12 h-8" />
@@ -10,15 +10,17 @@ export default function Navbar() {
       </div>
 
       {/* Tombol Register & Sign In */}
-      <div className="flex items-center space-x-3">
+      <div className="flex gap-4">
         <Link href="/register">
-          <button className="border border-black text-black px-6 py-1.5 rounded-md hover:bg-[#D3D3D3] transition">
+          <button className="bg-transparent border border-[#000000] text-[#000000] px-6 py-1.5 rounded-md hover:bg-[#699EEE] hover:text-white transition hover:border-transparent">
             Register
           </button>
         </Link>
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
-          Sign In
-        </button>
+        <Link href="/signin">
+          <button className="bg-[#699EEE] text-white px-6 py-1.5 rounded-md hover:bg-[#0046CC] transition">
+            Sign In
+          </button>
+        </Link>
       </div>
     </nav>
   );

@@ -14,31 +14,31 @@ export default function Register() {
           <h2 className="text-3xl font-bold mb-6 text-[#1C2A4A] font-sans">
             Register
           </h2>
-          <form className="text-[#D3D3D3] space-y-4">
+          <form className="space-y-4">
             <input
               type="text"
               placeholder="Name"
-              className="w-full px-4 py-2 border rounded focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none text-black"
             />
             <input
               type="text"
               placeholder="Username"
-              className="w-full px-4 py-2 border rounded focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none text-black"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full px-4 py-2 border rounded focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none text-black"
             />
             <input
               type="password"
               placeholder="Password"
-              className="w-full px-4 py-2 border rounded focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none text-black"
             />
             <input
               type="password"
               placeholder="Confirm Password"
-              className="w-full px-4 py-2 border rounded focus:outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none text-black"
             />
             <button
               type="submit"
@@ -50,7 +50,7 @@ export default function Register() {
           <div className="mt-4 text-center text-[#1C2A4A]">
             Do you already have an account?{" "}
             <Link
-              href="/login"
+              href="/signin"
               className="text-[#56B4F7] hover:underline font-semibold"
             >
               Log In
